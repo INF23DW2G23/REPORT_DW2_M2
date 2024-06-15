@@ -1,11 +1,10 @@
 FROM node:17
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y netcat
-
-COPY package*.json ./
+COPY package.json .
+COPY package-lock.json .
 RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD ["./wait-for-it.sh", "db:3306", "--", "node", "index.js"]
+CMD ["npm", "start"]

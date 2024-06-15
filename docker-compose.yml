@@ -5,25 +5,32 @@ services:
     build:
       context: .
       dockerfile: ./server/dockerfile.mysql 
-    command: 
-      - mysqld
-      - --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: SMART-MANAGEMENT
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 15
     volumes:
       - ./server/database/mysql-init.sql:/docker-entrypoint-initdb.d/mysql-init.sql
     ports:
       - "3306:3306"
+    networks:
+      - app-network
   backend:
     container_name: app-backend
     build:
       context: ./server
       dockerfile: Dockerfile
-    command: ["/bin/sh", "-c", "./wait-for-it.sh db 3306 && npm start"]
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+    restart: always
     ports:
       - "3000:3000"
+    networks:
+      - app-network
   frontend:
     container_name: app-frontend
     build:
@@ -34,4 +41,8 @@ services:
       - /app/node_modules
     ports:
       - "3001:3000"
-    command: ["npm", "start"]
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

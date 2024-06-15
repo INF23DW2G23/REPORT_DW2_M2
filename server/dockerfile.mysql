@@ -2,5 +2,6 @@ FROM mysql:5.7
 
 COPY ./server/database/mysql-init.sql /docker-entrypoint-initdb.d/mysql-init.sql
 
-ENV MYSQL_ROOT_PASSWORD=12345678
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=SMART-MANAGEMENT
 EXPOSE 3306
