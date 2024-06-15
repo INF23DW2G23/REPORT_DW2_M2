@@ -14,7 +14,7 @@ O projeto "Smartphone Management" é uma aplicação web para a gestão de telem
 ## Organização do repositório
 
 * [Source code](https://github.com/INF23DW2G23/REPORT_DW2_M2)
-* [Imagens](https://github.com/INF23DW2G23/REPORT_DW2_M2/data/images)
+* [Imagens](https://github.com/INF23DW2G23/REPORT_DW2_M2/tree/main/data/images)
 
 ## Galeria
 
