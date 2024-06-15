@@ -83,4 +83,4 @@ O projeto "Smartphone Management" é uma aplicação web para a gestão de telem
 
 ### Dockerhub
 
-[DockerHub](https://hub.docker.com/repositories/inf23dw2g23)
+[DockerHub](https://hub.docker.com/repositories/inf23dw2g23m2)
