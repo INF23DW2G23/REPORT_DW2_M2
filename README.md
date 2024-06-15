@@ -77,9 +77,9 @@ O projeto "Smartphone Management" é uma aplicação web para a gestão de telem
 
 ### Apresentação do projeto
 
-* Capitulo 1: [Descrição do projeto](files/File1.md)
-* Capitulo 2: [Recursos](files/File2.md)
-* Capitulo 3: [Desenvolvimento](files/File3.md)
+* Capitulo 1: [Descrição do projeto](data/files/File1.md)
+* Capitulo 2: [Recursos](data/files/File2.md)
+* Capitulo 3: [Desenvolvimento](data/files/File3.md)
 
 ### Dockerhub
 
