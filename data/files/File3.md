@@ -31,6 +31,7 @@ Essa abordagem simplifica o processo de implementação e permite escalabilidade
 
 O projeto foi realizado com sucesso, demonstrando um avanço significativo na integração entre a API REST e a aplicação cliente em ReactJS. 
 Todos os requisitos foram atendidos, incluindo a implementação de uma camada robusta de autenticação, documentação clara da API e configuração eficiente do ambiente de desenvolvimento usando Docker.
+
 ---
 
 [< Previous](File2.md) | [^ Main](../../../) |
