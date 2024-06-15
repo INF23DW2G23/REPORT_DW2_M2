@@ -20,15 +20,15 @@ O projeto "Smartphone Management" é uma aplicação web para a gestão de telem
 
 ### Docker
 
-![docker](images/docker-engine_M2.png)
+![docker](data/images/docker-engine_M2.png)
 
 ### Base de Dados
 
-![Base de Dados](images/db-tables.png)
+![Base de Dados](data/images/db-tables.png)
 
 ### Postman
 
-![Postman](images/postman-collection.png)
+![Postman](data/images/postman-collection.png)
 
 ### Interface
 
