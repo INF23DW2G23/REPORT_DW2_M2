@@ -4,7 +4,7 @@ import {
    Users, UserById, CreateUser, UpdateUser, DeleteUser, UserMe,
    Phones, PhoneById, CreatePhone, UpdatePhone, DeletePhone, PhoneByEmei,
    Companies, CompanyById, CreateCompany, UpdateCompany, DeleteCompany,
-   Accessories, AccessoryByPhoneId, CreateAccessory, UpdateAccessory, DeleteAccessory
+   Accessories, AccessoryByPhoneId, UpdateAccessory, 
  } from './componentsIndex';
  
  const componentsMap = {
@@ -27,9 +27,7 @@ import {
    'DeleteCompany': DeleteCompany,
    'Accessories': Accessories,
    'AccessoryByPhoneId': AccessoryByPhoneId,
-   'CreateAccessory': CreateAccessory,
    'UpdateAccessory': UpdateAccessory,
-   'DeleteAccessory': DeleteAccessory
  };
  
  export default componentsMap;

@@ -22,7 +22,6 @@ import DeleteCompany from './pages/Companies/DeleteCompany';
 import Accessories from './pages/Accessories/ListAccessories';
 import AccessoryByPhoneId from './pages/Accessories/AccessoriesByPhoneId';
 import UpdateAccessory from './pages/Accessories/UpdateAccessories';
-import DeleteAccessory from './pages/Accessories/DeleteAccessories';
 import './App.css';
 
 function App() {
@@ -62,7 +61,6 @@ function App() {
         <Route path="/accessories" element={<ProtectedRoute element={<Accessories url={machineHost} api={sufix} />} token={token} />}/>
         <Route path="/accessorybyphoneid" element={<ProtectedRoute element={<AccessoryByPhoneId url={machineHost} api={sufix} />} token={token} />}/>
         <Route path="/updateaccessory" element={<ProtectedRoute element={<UpdateAccessory url={machineHost} api={sufix} />} token={token} />}/>
-        <Route path="/deleteaccessory" element={<ProtectedRoute element={<DeleteAccessory url={machineHost} api={sufix} />} token={token} />}/>
       </Routes>
     </div>
   );

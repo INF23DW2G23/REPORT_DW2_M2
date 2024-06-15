@@ -22,9 +22,8 @@ export { default as DeleteCompany } from '../pages/Companies/DeleteCompany';
 
 export { default as Accessories } from '../pages/Accessories/ListAccessories';
 export { default as AccessoryByPhoneId } from '../pages/Accessories/AccessoriesByPhoneId';
-export { default as CreateAccessory } from '../pages/Accessories/CreateAccessories';
 export { default as UpdateAccessory } from '../pages/Accessories/UpdateAccessories';
-export { default as DeleteAccessory } from '../pages/Accessories/DeleteAccessories';
+
 
 export { default as UserActions } from './UserAction';
 export { default as PhoneActions } from './PhoneAction';
